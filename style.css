@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background:url('newyr.jpg') no-repeat center center/cover;
+    color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    text-shadow: 5px 5px 10px white;
+}
+h1{
+    font-size: 3.7rem;
+    margin: -100px 0 30px;
+}
+.year{
+    font-size: 12rem;
+    z-index: -1;
+    opacity: 0.6;;
+    color: red;
+    position: absolute;
+    top: 2.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.countdown{
+    display: none;
+    transform: scale(2);
+}
+.time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.25rem;
+}
+.time h2{
+    font-size: 1rem;
+    margin: 0;
+}
+.time p{
+    font-size: 0.75rem;
+    margin: 0;
+    padding: 0;
+}
+@media(min-width:640px){
+    h1{
+        font-size: 3.5rem;
+    }
+    .time{
+        margin: 1rem;
+    }
+    .time h2{
+        font-size: 1.5rem;
+        margin: 0 0 5px;
+    }
+    .time p{
+        font-size: 1rem;
+    }
+}
